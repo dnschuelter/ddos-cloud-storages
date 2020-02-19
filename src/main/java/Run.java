@@ -22,7 +22,7 @@ public class Run {
     static final int SIZE_POOL = 800;
     static final ExecutorService EXEC = Executors.newFixedThreadPool(SIZE_POOL);
 
-    static final int TRYES = 5;
+    static final int TRYES = 20;
     static final int QT = TRYES*Urls.size();
 
     static final AtomicInteger DONE = new AtomicInteger(0);

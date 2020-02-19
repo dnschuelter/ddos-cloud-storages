@@ -3,7 +3,9 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Urls {
-    private static final String URL_POPUP_BASE = "https://magrathealabs.landing-pages-staging.rdstation.systems/popup/show.json?account_id=";
+    private static final String URL_PROTOCOL = "http://";
+
+    private static final String URL_POPUP_BASE = URL_PROTOCOL+"magrathealabs.landing-pages-staging.rdstation.systems/popup/show.json?account_id=";
 
     private static final List<String> givenList = new ArrayList();
     static {
@@ -1958,7 +1960,6 @@ givenList.add(getUrl("","demonstracao-com-topicos-26-09-2017-14-30"));
 
     private static final String URL_WITHHOST = "landing-pages-staging.rdstation.systems/";
     private static final String URL_WITHOUTHOST = "landing-pages-staging.rdstation.com.br/";
-    private static final String URL_PROTOCOL = "https://";
 
     private static String getUrl(String whitelabel, String slug){
         if("".equals(whitelabel)){
