@@ -86,7 +86,7 @@ public class Run {
         }
 
         while(DONE.get() < QT){
-            Thread.sleep(60*1000);
+            Thread.sleep(10*1000);
             System.out.println("waiting ... "+DONE.get()+"/"+QT);
         }
         Thread.sleep(30*1000);
